@@ -1,49 +1,92 @@
 .header {
-   &__container {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &_description {
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 186px;
+      margin: 217px 0 29px;
+      font-family: Montserrat;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
 
+    &_mainheader {
+      max-width: 1024px;
+      margin: 29px 0 39px;
+      font-family: Montserrat;
+      font-size: 3rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+    }
 
-      &_description {
-      }
+    &_readbutton {
+      max-width: 249px;
+      font-family: Montserrat;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin: 39px 0 80px;
+      padding: 17px 29px 16px 28px;
+      border-radius: 32px;
+      box-shadow: 0px 17px 24px 0 rgba(48, 63, 159, 0.2);
+      background-color: $deep-blue;
+    }
 
+    &_figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-      &_mainheader {
-      }
-
-
-      &_readbutton {
-      }
-
-
-      &_figure {
-      }
-
-
-      &_img {
-      }
-
-
-      &_date {
-      }
-
-
-      &_chat {
-      }
-
-
-      &_comments {
-      }
-
-
-      &_likes {
-      }
+    &_img {
+    }
+    &_name {
+      max-width: 95px;
+      margin: 19px 0 12px;
+      font-family: Montserrat;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 0.7px;
+      text-align: center;
    }
 
+    &_date {
+      max-width: 157px;
+      color: rgba(255, 255, 255, 0.54);
+      margin-bottom: 34px;
+      font-family: Montserrat;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 0.7px;
+      & > span{
+        margin-left: 15px;
+      }
+    }
 
-   &__container-name {
-   }
+    &_chat {
+      margin-bottom: 68px;
+    }
+
+    &_comments, &_likes {
+       color: rgba(255, 255, 255, 0.7);
+       font-family: Motserrat;
+       font-size: 0.8rem;
+    }
+  }
 }
- 
+
 .fa-comment-alt {
+   transition: transform 0.5s cubic-bezier(0.6, -0.58, 0.735, 0.045);
+   cursor: pointer;
+   &:hover{
+      transform: scale(1.2, 1.2);
+   }
 }
-.fa-heart {
+.header__container_likes.far.fa-heart {
+   border-left: 1px solid transparent;
+   border-right: 1px solid transparent;
 }

@@ -178,6 +178,8 @@
 .components__search-box,
 .fa-heart,
 .fa-shopping-cart {
+  cursor: pointer;
+  transition: transform 0.5s cubic-bezier(0.6, -0.58, 0.735, 0.045);
   &:hover {
     transform: scale(1.2, 1.2);
   }
