@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap");
+
+@import "vars", "mixins", "main", "header", "header-content";
+
+// H1 {
+//   @include adaptive-font(40, 24);
+// }
+
+html, body {
+  height: 100%;
+  font-family: Montserrat, OpenSans, serif;
+  font-size: 14px;
+}
+.main{
+  min-height: 100vh;
+  max-width: 1920px;
+}
+.wrapper {
+  max-width: 1170px;
+  margin: 0 19.5%;
+}

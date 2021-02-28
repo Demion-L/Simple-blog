@@ -1,0 +1,116 @@
+.header {
+  max-width: 1920px;
+  margin: 0 auto;
+  &__socials {
+    background-color: #191919;
+  }
+
+  &__socials-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__socials-icons {
+    max-width: 219px;
+    display: flex;
+  }
+
+  &__socials-link,
+  &__content-select {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.38);
+    padding: 0.7em 0.5em;
+  }
+
+  &__socials-link {
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
+    &:hover {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+      transform: translate(0, -5px);
+      color: rgba(255, 255, 255, 0.78);
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__content-select {
+    max-width: 271px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content-signin {
+    padding-right: 0.6em;
+    min-width: 131px;
+    position: relative;
+    &:hover {
+      color: rgba(255, 255, 255, 0.78);
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 2rem;
+      background: rgba(255, 255, 255, 0.38);
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__signin-button {
+    text-transform: uppercase;
+    margin: 0 15px 0 6px;
+    cursor: pointer;
+  }
+
+  &__content-lenguage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:hover {
+      color: rgba(255, 255, 255, 0.78);
+    }
+  }
+}
+.select-css {
+  font-family: Montserrat;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.69;
+  padding: 0.6em 1.4em 0.5em 0.3em;
+  max-width: 100%;
+  border: 1px solid transparent;
+  border-radius: 0.5em;
+  appearance: none;
+  position: relative;
+  background: #191919 url(/img/icons/keyboard_arrow_down.png) no-repeat 100% center;
+
+
+  &:hover {
+    border-color: #888;
+  }
+  &:focus {
+    border-color: rgb(75, 61, 61);
+    color: rgb(214, 166, 166);
+    outline: none;
+  }
+}
+*[dir="rtl"] .select-css,
+:root:lang(ar) .select-css,
+:root:lang(iw) .select-css {
+  background-position: left 0.7em top 50%, 0 0;
+  padding: 0.6em 0.8em 0.5em 1.4em;
+}
+
+.fa-user-circle,
+.fa-globe {
+  font-size: 1.3em;
+}
+.fa-globe {
+  margin: 0 0.5rem 0 1.06rem;
+}

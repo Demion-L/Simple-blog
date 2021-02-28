@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap");
+.header__content {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg/main-bg.png) center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__content {
+  color: #ffffff;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 3%;
+  position: relative;
+}
+
+.header__nav-logo {
+  position: relative;
+}
+
+.header__nav-logo::before {
+  content: "LO";
+}
+
+.header__nav-logo::after {
+  content: "GO";
+}
+
+.header__nav-logo::before, .header__nav-logo::after {
+  font-family: Montserrat;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.header__nav-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.header__dropdown-element {
+  border-bottom: 4px solid transparent;
+  margin-right: 3%;
+}
+
+.header__dropdown-btn {
+  padding: 10px 10px 20px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.header__dropdown-btn::before {
+  content: "";
+  position: absolute;
+  display: block;
+  right: -1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.header__nav-components {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  left: 105%;
+  top: 25%;
+  transform: translate(-50%);
+}
+
+.header__dropdown-element:hover {
+  border-bottom: 4px solid #ff4081;
+}
+
+.fa-chevron-down {
+  display: inline-block;
+}
+
+.dropdown__content {
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+}
+
+.dropdown__content a {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
+  padding: 10px 12px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown__content a:hover {
+  background-color: rgba(250, 250, 250, 0.2);
+}
+
+.components__search-box {
+  padding-right: 12px;
+}
+
+.components__search-box input[type="text"] {
+  padding-bottom: 12px;
+  border: none;
+  background: none;
+  z-index: 1;
+  width: 25px;
+  height: 15px;
+  transition: all 0.25s ease-in 0.25s;
+  color: transparent;
+  font-size: 0.75rem;
+  line-height: 20px;
+}
+
+.components__search-box input[type="text"]:hover {
+  cursor: pointer;
+}
+
+.components__search-box input[type="text"]:hover:focus {
+  cursor: text;
+}
+
+.components__search-box input[type="text"]:hover + span {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.components__search-box input[type="text"]:focus {
+  width: 200px;
+  padding: 0 10px;
+  outline: none;
+  color: black;
+  background: none;
+  color: white;
+}
+
+.components__search-box input[type="text"]:focus + span {
+  width: 200px;
+}
+
+.components__search-box input[type="text"]:focus + span::before {
+  width: 2px;
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+
+.components__search-box input[type="text"] + span {
+  z-index: -1;
+  position: absolute;
+  border: 2px solid white;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  transition: all 0.25s ease-in 0.25s;
+  border-radius: 15px;
+  left: 0;
+}
+
+.components__search-box input[type="text"] + span::before {
+  transition: all 0.25s ease-in 0.5s;
+  transform-origin: left top;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  border-radius: 5px;
+  background: white;
+  transform: rotate(45deg) translate(16px, -1px);
+}
+
+.fa-heart {
+  padding: 0 12px 12px;
+  border-left: 1px solid rgba(165, 164, 164, 0.38);
+  border-right: 1px solid rgba(165, 164, 164, 0.38);
+}
+
+.fa-shopping-cart {
+  padding: 0 12px 12px;
+}
+
+.components__search-box:hover,
+.fa-heart:hover,
+.fa-shopping-cart:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.header {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header__socials {
+  background-color: #191919;
+}
+
+.header__socials-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__socials-icons {
+  max-width: 219px;
+  display: flex;
+}
+
+.header__socials-link, .header__content-select {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.38);
+  padding: 0.7em 0.5em;
+}
+
+.header__socials-link {
+  border-bottom: 1px solid transparent;
+  transition: 0.5s;
+}
+
+.header__socials-link:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+  transform: translate(0, -5px);
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.header__socials-link:last-child {
+  margin-right: 0;
+}
+
+.header__content-select {
+  max-width: 271px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__content-signin {
+  padding-right: 0.6em;
+  min-width: 131px;
+  position: relative;
+}
+
+.header__content-signin:hover {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.header__content-signin::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 2rem;
+  background: rgba(255, 255, 255, 0.38);
+  right: 0;
+  top: 0;
+}
+
+.header__signin-button {
+  text-transform: uppercase;
+  margin: 0 15px 0 6px;
+  cursor: pointer;
+}
+
+.header__content-lenguage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__content-lenguage:hover {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.select-css {
+  font-family: Montserrat;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.69;
+  padding: 0.6em 1.4em 0.5em 0.3em;
+  max-width: 100%;
+  border: 1px solid transparent;
+  border-radius: 0.5em;
+  appearance: none;
+  position: relative;
+  background: #191919 url(/img/icons/keyboard_arrow_down.png) no-repeat 100% center;
+}
+
+.select-css:hover {
+  border-color: #888;
+}
+
+.select-css:focus {
+  border-color: #4b3d3d;
+  color: #d6a6a6;
+  outline: none;
+}
+
+*[dir="rtl"] .select-css,
+:root:lang(ar) .select-css,
+:root:lang(iw) .select-css {
+  background-position: left 0.7em top 50%, 0 0;
+  padding: 0.6em 0.8em 0.5em 1.4em;
+}
+
+.fa-user-circle,
+.fa-globe {
+  font-size: 1.3em;
+}
+
+.fa-globe {
+  margin: 0 0.5rem 0 1.06rem;
+}
+
+html, body {
+  height: 100%;
+  font-family: Montserrat, OpenSans, serif;
+  font-size: 14px;
+}
+
+.main {
+  min-height: 100vh;
+  max-width: 1920px;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 19.5%;
+}
