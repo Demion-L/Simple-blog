@@ -31,9 +31,15 @@
       letter-spacing: 1.2px;
       margin: 39px 0 80px;
       padding: 17px 29px 16px 28px;
+      cursor: pointer;
       border-radius: 32px;
-      box-shadow: 0px 17px 24px 0 rgba(48, 63, 159, 0.2);
       background-color: $deep-blue;
+      box-shadow: 0 0 40px 40px rgba(48, 63, 159, 0.2) inset, 0 0 0 0 rgba(48, 63, 159, 0.2);
+      transition: all 150ms ease-in-out;
+      &:hover {
+        box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+        color: aquamarine;
+      }
     }
 
     &_figure {
@@ -43,9 +49,10 @@
     }
 
     &_img {
+      height: 50px;
     }
     &_name {
-      max-width: 95px;
+      max-width: 115px;
       margin: 19px 0 12px;
       font-family: Montserrat;
       font-size: 1rem;
