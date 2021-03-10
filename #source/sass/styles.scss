@@ -1,17 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
 
-@import "vars", "mixins", "main", "header", "header-content", "sort", "blog";
+@import "vars", "mixins", "main", "header", "header-content", "sort", "blog",
+  "block2", "block3", "block4", "aside";
 
 // H1 {
 //   @include adaptive-font(40, 24);
 // }
 
-html, body {
+html,
+body {
   height: 100%;
-  font-family: Montserrat, OpenSans, serif;
+  font-family: Montserrat, "Open Sans", sans-serif;
   font-size: 14px;
 }
-.main{
+.main {
   min-height: 100vh;
   max-width: 1920px;
 }

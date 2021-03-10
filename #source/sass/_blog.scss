@@ -1,10 +1,15 @@
 .blog {
+  display: flex;
+  justify-content: space-evenly;
   &__main {
+    width: 100%;
+    max-width: 1235px;
     background-color: #f5f5f5;
     border-top: 1px solid #dddddd;
   }
 
   &__content {
+    width: 100%;
     max-width: 820px;
     margin: 0.8% 0 0 19.5%;
   }
@@ -48,12 +53,12 @@
 
   &__block1-textcontent {
     margin: 13px 13px 17px 19px;
-  opacity: 0.87;
-  font-family: OpenSans;
-  font-size: 1.2rem;
-  line-height: 1.63;
-  letter-spacing: 0.64px;
-  color: rgba(0, 0, 0, 0.87);
+    opacity: 0.87;
+    font-family: "Open Sans";
+    font-size: 1.2rem;
+    line-height: 1.63;
+    letter-spacing: 0.64px;
+    color: rgba(0, 0, 0, 0.87);
   }
 
   &__block1-autor {
@@ -75,7 +80,6 @@
 
   &__block1-name {
     margin-bottom: 11px;
-    opacity: 0.87;
     font-family: Montserrat;
     font-weight: bold;
     font-size: 1rem;
@@ -85,9 +89,9 @@
 
   &__block1-current-date {
     font-family: Montserrat;
-  font-size: 0.8rem;
-  letter-spacing: 0.6px;
-  color: rgba(33, 33, 33, 0.54);
+    font-size: 0.8rem;
+    letter-spacing: 0.6px;
+    color: rgba(33, 33, 33, 0.54);
   }
 }
 @keyframes glide {
