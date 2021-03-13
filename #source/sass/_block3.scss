@@ -1,0 +1,136 @@
+.blog {
+  &__block3 {
+    display: flex;
+   //  flex-wrap: wrap;
+    background-color: #f5f5f5;
+  }
+
+  &__block3-item {
+    background-color: #fff;
+    margin: 0 20px 20px 0;
+    &:last-child {
+       margin-right: 0;
+    }
+  }
+}
+.block3 {
+  &__prevue {
+    position: relative;
+    &-first,
+    &-second,
+    &-third {
+      height: 160px;
+      width: 100%;
+      max-width: 260px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      color: #ffffff;
+      font-size: 1rem;
+      text-shadow: 3px 2px 1px #000;
+    }
+    &-first {
+      background: url(/img/icons/play.png) no-repeat center,
+        url(/img/bg/blog/Box4.png) no-repeat center;
+      background-size: auto, cover;
+    }
+    &-second {
+      background: url(/img/bg/blog/Box5.png) no-repeat center;
+      background-size: cover;
+    }
+    &-third {
+
+    }
+  }
+  &__prevue-title {
+    margin: 0 13px 20px 20px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    
+  }
+
+  &__prevue-reaction {
+    margin: 0 20px 15px 0;
+  }
+
+  &__prevue-comments {
+    &::before {
+      padding-right: 10px;
+    }
+  }
+
+  &__prevue-likes {
+    &::before {
+      padding-right: 5px;
+    }
+  }
+
+  &__info {
+  }
+
+  &__header {
+    margin: 12px 0 13px 19px;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    line-height: 1.71;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  &__textcontent {
+    margin: 13px 21px 17px 19px;
+    font-family: "Open Sans";
+    font-size: 1rem;
+    letter-spacing: 0.56px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  &__autor {
+    display: flex;
+    border-top: 1px solid #f5f5f5;
+    margin: 0 20px 0 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__pic {
+    display: flex;
+    & img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  // .block2__nameblock
+
+  &__nameblock {
+  }
+
+  &__name {
+    margin: 19px 0 14px 10px;
+    font-family: Montserrat;
+    font-size: 1rem;
+    letter-spacing: 0.7px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  &__current-date {
+    margin: 14px 0 15px 9px;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    letter-spacing: 0.6px;
+    color: rgba(33, 33, 33, 0.54);
+  }
+}
+
+.fa-comments {
+}
+.fa-heart {
+  border: unset;
+  font-size: 1rem;
+}
+
+.fa-ellipsis-v {
+}
